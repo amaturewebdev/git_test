@@ -3,9 +3,77 @@
 <html>
     <head>
         <style>
+            .grad-square2:hover{
+                transform: scale(1);
+            }
+            .grad-square2{
+                width:200px;
+                height:200px;
+                background: linear-gradient(35deg, red, blue);
+                border-radius: 50%;
+                transform: scale(2);
+                margin: 10px;
+            }
+            .grad-square{
+                width:200px;
+                height:200px;
+                background: linear-gradient(35deg, red, blue);
+                border-radius: 50%;
+            }
+            .red-square{
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: 300px;
+                background-color: red;
+                z-index: 2;
+            }
+            .blue-square{
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: 330px;
+                left: 50px;
+                background-color: blue;
+                z-index: 1;
+            }
+            .left-align{
+                text-align: left;
+                color: red;
+                width: 80%;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin: 25px;
+                opacity: 0.5;
+            }
+            .right-align{
+                text-align: right;
+                color: blue;
+                font-style: italic;
+            }
+            .center-align{
+                text-align: center;
+                color: blueviolet;
+                font-style: oblique;
+                font-size: 28px;
+                
+            }
+            .justify-align{
+                text-align: justify;
+                color: green;
+                text-decoration: underline;
+                border-width: 5px;
+                border-style: solid;
+            }
+            .fifth-colon{
+                text-decoration: line-through;
+                font-size: 24px;
+                box-shadow: -5px -5px 3px green;
+            }
             li {
                 font-family: manospace;
                 color: red;
+                
 
             }
 
@@ -16,6 +84,10 @@
             #pid {
                 font-size: 24px;
             }
+            
+            [aling='center'] {
+                background-color: pink;
+            }
         </style>
         <title>
             My first web page! (not really)
@@ -24,11 +96,14 @@
     <body>
         <main>
             <h2><p>Collection of links from TOP</p></h2>
+            <hr>
             <ol>
                 <li><a href="http://conqueringthecommandline.com/book/" target="_blank">Conquering the Command Line</a></li>
                 <li><a href="https://www.learnenough.com/command-line-tutorial/basics" target="_blank">Learn Enough Command Line to Be Dangerous </a></li>
                 <li><a href="https://explainshell.com/" target="_blank">Shell commands explanation</a></li>
+                <li><a href="https://files.fosswire.com/2007/08/fwunixref.pdf">Unix/Linux Command Reference</a></li>
             </ol>
+            <hr>
             <h3>Just some fuckery</h3>
             <input type="text" placeholder="fuck your mother">
             <form action="file:///home/cyber/Documents/test_proj/git_test/input.html"><input type="text" placeholder="and sister"><button type="submit">Go to hell</button></form>
@@ -52,7 +127,34 @@
             </form>
             <div id="pid">
                 <p class="class-kvas">Some random text to show CSS stuff</p>
+                <br>
+                <p aling="center">More random text</p>
             </div>
+            <div>
+                <p class='left-align'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <p class='right-align'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <p class='center-align'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <p class='justify-align'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <p class="fifth-colon">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <br>
+            <div class="red-square"></div>
+            <div class="blue-square"></div>
+            <div class="grad-square"></div><div class="grad-square2"></div>
         </main>
     </body>
 </html>
